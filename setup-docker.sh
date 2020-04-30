@@ -13,11 +13,12 @@ yum install -y docker-ce
 
 cat >> /etc/hosts << EOF
 {
-  192.168.4.110 control.example.com control
-  192.168.4.111 worker1.example.com worker1
-  192.168.4.112 worker2.example.com worker2
-  192.168.4.113 worker3.example.com worker3
+  172.31.39.75 control.example.com control
+  172.31.44.210 worker1.example.com worker1
+  172.31.36.2 worker2.example.com worker2
+  172.31.40.220 worker3.example.com worker3
 }
+
 EOF
 
 mkdir -p /etc/systemd/system/docker.service.d
